@@ -105,6 +105,7 @@ venv.bak/
 
 #ignore config files
 *config.py
+*.token
 
 #pycharm
 .idea/

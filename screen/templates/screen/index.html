@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Smart screen</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'screen/style.css' %}"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'screen/app.js' %}"></script>
+</head>
+
+
+<body>
+<div id="slideshow">
+    {% for photo in photosList %}
+    <div>
+        <img src="{{ photo }}" alt="Photo" width="1024">
+    </div>
+    {% endfor %}
+</div>
+</body>
+

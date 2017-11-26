@@ -31,6 +31,7 @@ def getPhotos():
         headers = headers or {}
         headers['Authorization'] = 'Bearer ' + token.access_token
         return old_request(operation, url, data=data, headers=headers)
+    #TODO if receive a 403, get a new token
 
     gd_client.request = request
 
